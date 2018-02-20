@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div class="block">
         <p class="digit">{{days}}</p>
         <p class="text">Days</p>
@@ -66,29 +66,44 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400|Roboto:100);
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
 .block {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .text {
-    color: #bd1616;
+    color: gold;
     font-size: 40px;
-    font-family: 'Roboto Condensed', serif;
+    font-family: 'Orbitron', serif;
     font-weight: 40;
     margin-top:10px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     text-align: center;
 }
 
 .digit {
-    color: #ecf0f1;
-    font-size: 150px;
-    font-weight: 100;
-    font-family: 'Roboto', serif;
+    color: #d7dce0;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Orbitron', serif;
     margin: 10px;
     text-align: center;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: column; */
+  /* min-height: 100vh; */
+  align-items: center;
+  height: 100vh; 
+}
+
+@media all and (max-width:500px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>
