@@ -1,18 +1,24 @@
 <template>
   <div id="app">
-    <header>
-      <span>Vue.js PWA</span>
-    </header>
+  
     <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
-      <router-view></router-view>
+      <Timer v-bind:date=date></Timer>
     </main>
   </div>
 </template>
 
 <script>
+import Timer from '@/components/Timer.vue'
 export default {
-  name: 'app'
+  name: 'app',
+  data () {
+    return {
+      date: 'April 19, 2018'
+    }
+  },
+  components: {
+    Timer
+  }
 }
 </script>
 
