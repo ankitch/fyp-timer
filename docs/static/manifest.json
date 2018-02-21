@@ -3,7 +3,7 @@
   "short_name": "fyptimer",
   "icons": [
     {
-      "src": "/static/img/icons/android-chrome-192x192.png",
+      "src": "https://i.imgur.com/lUIx9rE.png",
       "sizes": "192x192",
       "type": "image/png"
     },
