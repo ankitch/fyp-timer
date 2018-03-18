@@ -10,7 +10,7 @@ export default {
   name: 'app',
   data () {
     return {
-      date: 'April 19, 2018'
+      date: 'May 10, 2018'
     }
   },
   components: {
